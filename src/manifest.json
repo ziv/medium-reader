@@ -1,0 +1,17 @@
+{
+  "name": "Medium Reader",
+  "version": "1.0",
+  "description": "reading medium articles",
+  "manifest_version": 2,
+  "permissions": [
+    "tabs",
+    "webRequest",
+    "background",
+    "webRequestBlocking",
+    "*://*.medium.com/*"
+  ],
+  "background": {
+    "scripts": ["main.js"],
+    "persistent": true
+  }
+}
